@@ -1,7 +1,7 @@
 class Collection {
-  
+
   constructor(name) {
-    
+
     this.name = name;
     this.collection = null;
     this.Mongo = null;
@@ -125,6 +125,26 @@ class Collection {
       throw e;
     }
 
+  }
+
+  async deleteMany(query, options) {
+    this._getCollection();
+    try {
+      return await this.collection.deleteMany(query, options);
+    }
+    catch (e) {
+      throw e;
+    }
+  }
+
+  async deleteOne(query, options) {
+    this._getCollection();
+    try {
+      return await this.collection.deleteOne(query, options);
+    }
+    catch (e) {
+      throw e;
+    }
   }
 
   async remove(query, options) {

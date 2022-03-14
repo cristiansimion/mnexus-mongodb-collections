@@ -1,2 +1,4 @@
 .idea
 .git
+.npmrc
+package-lock.json

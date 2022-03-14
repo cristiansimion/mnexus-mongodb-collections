@@ -30,7 +30,7 @@ In your entry point:
 #### `index.js`
 ```js
 
-const Mongo = require('meteor-mongodb-collections'); // This creates the singleton.
+const Mongo = require('@cristiansimion/mnexus-mongodb-collections'); // This creates the singleton.
 const MongoClient = require('mongodb').MongoClient;
 const doStuff = require('./doStuff.js');
 
@@ -61,7 +61,7 @@ After that you can declare collections:
 
 #### `collections/Users.js`
 ```js
-const Mongo = require('meteor-mongodb-collections');
+const Mongo = require('@cristiansimion/mnexus-mongodb-collections');
 const Users = new Mongo.Collection("users");
 
 module.exports = Users;

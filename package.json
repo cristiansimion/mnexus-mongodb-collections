@@ -1,6 +1,6 @@
 {
-  "name": "mnexus-mongodb-collections",
-  "version": "1.0.0",
+  "name": "@cristiansimion/mnexus-mongodb-collections",
+  "version": "1.0.2",
   "description": "An updated version of meteor-mongodb-collections.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cristiansimion/mnexus-mongodb-collections.git"
+    "url": "git://github.com/cristiansimion/mnexus-mongodb-collections.git"
   },
   "keywords": [
     "mongodb",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/cristiansimion/mnexus-mongodb-collections/issues"
   },
-  "homepage": "https://github.com/cristiansimion/mnexus-mongodb-collections#readme"
+  "homepage": "https://github.com/cristiansimion/mnexus-mongodb-collections#readme",
+  "dependencies": {
+    "@cristiansimion/mnexus-mongodb-collections": "^1.0.1"
+  }
 }
